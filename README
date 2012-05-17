@@ -1,5 +1,5 @@
-a Lua client for eibd, the open-source EIB/KNX daemon.
-Sister project: the Ruby client ( https://github.com/ekarak/eibd_ruby )
+a Ruby client for eibd, the open-source EIB/KNX daemon.
+Sister project: the Lua client ( https://github.com/ekarak/eibd_lua )
 
 just following patch to bcusdk-0.0.5/eibd/client/Makefile.in 
 so as to add Ruby and Lua client language support:
