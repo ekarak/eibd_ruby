@@ -204,7 +204,7 @@ class EIBConnection
       raise Errno::ECONNRESET if block and (result.length == 0)
       puts "__EIB_CheckRequest received #{result.length} bytes: #{result.hexdump})" if $DEBUG
       if result.length > 0
-        @head.concat(result.split('').collect{|c| c.unpack('c')[0]})
+        @head.concat(result.split('').collect{|c| c.unpack('C')[0]})
       end
       puts "__EIB_CheckRequest @head after recv. = #{@head.inspect})" if $DEBUG
       @readlen += result.length
